@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 body.dark {
-  --background-primary: #121212;
+  --background-primary: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(19,131,134,1) 50%, rgba(0,212,255,1) 100%);;
   --font-color-primary: #ccc;
   --elevation-background: #1d1d1d;
   --link-color: #09f;
@@ -44,11 +44,12 @@ body.dark {
   box-sizing: border-box;
 }
 body {
-  background-color: var(--background-primary);
   color: var(--font-color-primary);
   padding: 100px 100px;
   font-size: 1.05rem;
   font-family: var(--font-family-primary);
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 a {
   text-decoration: none;
@@ -381,6 +382,7 @@ body.dark .github-corner {
 }
 
 fieldset {
+  background: rgba(106, 40, 150, 0.6);
   padding: 17px 20px;
   border-radius: 5px;
   border: 1px solid var(--field-borders);
